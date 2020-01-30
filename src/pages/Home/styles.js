@@ -13,6 +13,7 @@ export const ProductList = styled.ul`
     background: #fff;
     border-radius: 4px;
     padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
 
     img {
       align-self: center;
@@ -32,25 +33,28 @@ export const ProductList = styled.ul`
     }
 
     button {
-      background: #93b05c;
+      background: #5d737e;
       color: #fff;
       border: 0;
       border-radius: 4px;
       overflow: hidden;
       margin-top: auto;
-
+      &:disabled {
+        cursor: wait;
+      }
       display: flex;
       align-items: center;
-      transition: 0.3s;
+      transition: background 0.4s;
 
       &:hover {
-        background: ${darken(0.02, '#93b05c')};
+        background: ${darken(0.07, '#5d737e')};
       }
       div {
         display: flex;
         align-items: center;
         padding: 12px;
         background: rgba(0, 0, 0, 0.1);
+        position: relative;
 
         svg {
           margin-right: 5px;

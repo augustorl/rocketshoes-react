@@ -5,6 +5,7 @@ export const Container = styled.div`
   padding: 30px;
   background: #fff;
   border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
 
   footer {
     margin-top: 30px;
@@ -13,7 +14,7 @@ export const Container = styled.div`
     align-items: center;
 
     button {
-      background: #3bd783;
+      background: #5d737e;
       color: #fff;
       border: 0;
       border-radius: 4px;
@@ -22,7 +23,7 @@ export const Container = styled.div`
       text-transform: uppercase;
 
       &:hover {
-        background: ${darken(0.03, '#3bd783')};
+        background: ${darken(0.03, '#5d737e')};
       }
     }
   }
@@ -32,7 +33,7 @@ export const ProductTable = styled.table`
   width: 100%;
 
   thead th {
-    color: #999;
+    color: #5d737e;
     text-align: left;
     padding: 12px;
   }
@@ -47,7 +48,7 @@ export const ProductTable = styled.table`
   }
 
   strong {
-    color: #333;
+    color: #5d737e;
     display: block;
   }
   span {
@@ -79,12 +80,14 @@ export const Total = styled.div`
   display: flex;
   align-items: baseline;
   span {
-    color: #999;
+    color: #5d737e;
     font-weight: bold;
   }
 
   strong {
     font-size: 25px;
     margin-left: 10px;
+    color: #5d737e;
+    font-weight: lighter;
   }
 `;

@@ -11,13 +11,13 @@ import * as CartActions from '../../store/modules/cart/actions';
 
 import { Container, ProductTable, Total } from './styles';
 
-function Cart({ cart, removeFromCart, updateAmount, total }) {
+function Cart({ cart, removeFromCart, updateAmountRequest, total }) {
   function increment(product) {
-    updateAmount(product.id, product.amount + 1);
+    updateAmountRequest(product.id, product.amount + 1);
   }
 
   function decrement(product) {
-    updateAmount(product.id, product.amount - 1);
+    updateAmountRequest(product.id, product.amount - 1);
   }
 
   return (
@@ -26,8 +26,8 @@ function Cart({ cart, removeFromCart, updateAmount, total }) {
         <thead>
           <tr>
             <th />
-            <th>Produto</th>
-            <th>Qtd</th>
+            <th>Product</th>
+            <th>Amount</th>
             <th>Subtotal</th>
             <th />
           </tr>
@@ -45,11 +45,11 @@ function Cart({ cart, removeFromCart, updateAmount, total }) {
               <td>
                 <div>
                   <button type="button" onClick={() => decrement(product)}>
-                    <MdRemoveCircleOutline size={20} color="#3bd783" />
+                    <MdRemoveCircleOutline size={20} color="#5d737e" />
                   </button>
                   <input type="number" readOnly value={product.amount} />
                   <button type="button" onClick={() => increment(product)}>
-                    <MdAddCircleOutline size={20} color="#3bd783" />
+                    <MdAddCircleOutline size={20} color="#5d737e" />
                   </button>
                 </div>
               </td>
@@ -61,7 +61,7 @@ function Cart({ cart, removeFromCart, updateAmount, total }) {
                   type="button"
                   onClick={() => removeFromCart(product.id)}
                 >
-                  <MdDelete size={20} color="#3bd783" />
+                  <MdDelete size={20} color="#5d737e" />
                 </button>
               </td>
             </tr>
@@ -69,7 +69,7 @@ function Cart({ cart, removeFromCart, updateAmount, total }) {
         </tbody>
       </ProductTable>
       <footer>
-        <button type="button">Finalizar Pedido</button>
+        <button type="button">Proceed to checkout</button>
 
         <Total>
           <span>Total</span>
@@ -93,7 +93,4 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch =>
   bindActionCreators(CartActions, dispatch);
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(Cart);
+export default connect(mapStateToProps, mapDispatchToProps)(Cart);

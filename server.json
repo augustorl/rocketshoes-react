@@ -2,23 +2,23 @@
   "stock": [
     {
       "id": 1,
-      "amount": 3
+      "amount": 10
     },
     {
       "id": 2,
-      "amount": 5
+      "amount": 10
     },
     {
       "id": 3,
-      "amount": 2
+      "amount": 3
     },
     {
       "id": 4,
-      "amount": 1
+      "amount": 10
     },
     {
       "id": 5,
-      "amount": 5
+      "amount": 10
     },
     {
       "id": 6,
@@ -27,40 +27,40 @@
   ],
   "products": [
     {
-      "id": 1,
-      "title": "Tênis de Caminhada Leve Confortável",
+      "id": 4,
+      "title": "NIB Christian Louboutin Louis Flat Mens Azzurro Blue Spike Sneaker",
+      "price": 700.90,
+      "image": "https://raw.githubusercontent.com/augustorl/redux/master/src/assets/tenis3.png"
+    },
+    {
+      "id": 2,
+      "title": "Marcelo Burlon Sneakers Men Cross White Pelle shoes",
+      "price": 373.0,
+      "image": "https://raw.githubusercontent.com/augustorl/redux/master/src/assets/tenis2.png"
+    },
+    {
+      "id": 3,
+      "title": "Adidas Swift Run 2020 Black version ",
       "price": 179.9,
       "image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/modulo-redux/tenis1.jpg"
     },
     {
-      "id": 2,
-      "title": "Tênis VR Caminhada Confortável Detalhes Couro Masculino",
-      "price": 139.9,
-      "image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/modulo-redux/tenis2.jpg"
-    },
-    {
-      "id": 3,
-      "title": "Tênis Adidas Duramo Lite 2.0",
-      "price": 219.9,
-      "image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/modulo-redux/tenis3.jpg"
+      "id": 1,
+      "title": "Vivienne Westwood x Hyper Gel Lyte Colorful Cyan Sneakers",
+      "price": 279.90,
+      "image": "https://raw.githubusercontent.com/augustorl/redux/master/src/assets/tenis1.png"
     },
     {
       "id": 5,
-      "title": "Tênis VR Caminhada Confortável Detalhes Couro Masculino",
+      "title": "Adidas Classic Running Sneakers 3.0 B & W",
       "price": 139.9,
       "image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/modulo-redux/tenis2.jpg"
     },
     {
       "id": 6,
-      "title": "Tênis Adidas Duramo Lite 2.0",
+      "title": "Adidas Duramo Lite 2020 Edition White and Grey",
       "price": 219.9,
       "image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/modulo-redux/tenis3.jpg"
-    },
-    {
-      "id": 4,
-      "title": "Tênis de Caminhada Leve Confortável",
-      "price": 179.9,
-      "image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/modulo-redux/tenis1.jpg"
     }
   ]
 }
