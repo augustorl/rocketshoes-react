@@ -1,5 +1,5 @@
 # RocketShoes
-:shoe: Sample store built with Redux and Redux-Saga
+:shoe: Sample store built with React using Redux and Redux-Saga
 
 ### [Live Demo](https://augustorl-rocketshoes.netlify.com//)
 
